@@ -1,6 +1,5 @@
 import * as Automerge from "@automerge/automerge";
-import { AutomergeUrl } from "@automerge/automerge-repo";
-import { useDocument, useDocHandle } from "@automerge/react";
+import { AutomergeUrl, useDocument, useDocHandle } from "@automerge/react";
 import ReactJson, { InteractionProps } from "@microlink/react-json-view";
 import { useCallback, useState } from "react";
 import { useColorScheme } from "./useColorScheme";
