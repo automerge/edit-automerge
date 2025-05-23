@@ -17,6 +17,7 @@ export const Editor = ({
   const [doc, changeDoc] = useDocument<Record<string, unknown>>(documentUrl);
   const handle = useDocHandle(documentUrl);
 
+  // @ts-expect-error "might use it later"
   const _onSelectAutomergeUrl = useCallback(
     (url: AutomergeUrl) => {
       setHistory([documentUrl, ...history]);
@@ -73,6 +74,7 @@ export const Editor = ({
   }, []);
 
   // lifted from https://gist.github.com/davalapar/d0a5ba7cce4bc599f54800da22926da2
+  // @ts-expect-error "might use it later"
   const _onDownloadDoc = useCallback(
     function () {
       if (!doc || !handle) {

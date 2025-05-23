@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@automerge/react": "^2.0.0-beta.5",
+    "@automerge/automerge": "2.2.9",
     "@microlink/react-json-view": "^1.26.2",
     "react": "^18.3.0",
     "react-dom": "^18.3.0"
