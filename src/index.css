@@ -17,6 +17,7 @@
 #root {
     display: flex;
     align-items: stretch;
+    flex: 1;
 }
 
 a {
@@ -69,5 +70,140 @@ button:focus-visible {
     }
     button {
         background-color: #f9f9f9;
+    }
+}
+
+/* DocumentUrlInput styles */
+.document-url-input-container {
+    min-height: 100vh;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.document-url-input-form {
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.document-url-input-field {
+    margin-bottom: 15px;
+}
+
+.document-url-input-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.document-url-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.document-url-input.error {
+    border: 2px solid #e74c3c;
+}
+
+.document-url-error {
+    color: #e74c3c;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.document-url-warning {
+    color: #e67e22;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.document-url-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.document-url-submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.document-url-submit:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.document-url-cancel {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #95a5a6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.editor-header {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.editor-document-url {
+    font-size: 14px;
+    color: #666;
+}
+
+.editor-change-url-btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+    .document-url-input-form {
+        background-color: #2a2a2a;
+        border-color: #444;
+        color: #fff;
+    }
+
+    .document-url-input {
+        background-color: #333;
+        border-color: #555;
+        color: #fff;
+    }
+
+    .document-url-input.error {
+        border-color: #e74c3c;
+    }
+
+    .editor-header {
+        background-color: #2a2a2a;
+        border-bottom-color: #444;
+    }
+
+    .editor-document-url {
+        color: #ccc;
     }
 }

@@ -14,5 +14,10 @@ export const useHash = () => {
     };
   });
 
-  return hash;
+  const setHashValue = useCallback((newHash: string) => {
+    window.location.hash = newHash;
+    setHash(newHash);
+  }, []);
+
+  return [hash, setHashValue] as const;
 };

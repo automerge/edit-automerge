@@ -6,8 +6,10 @@ import { useColorScheme } from "./useColorScheme";
 
 export const Editor = ({
   docUrl: originalDocumentUrl,
+  onChangeUrl,
 }: {
   docUrl: AutomergeUrl;
+  onChangeUrl: () => void;
 }) => {
   const [documentUrl, changeDocumentUrl] = useState(originalDocumentUrl);
   const [history, setHistory] = useState<AutomergeUrl[]>([]); // TODO: make these actual navigation effects?
@@ -109,15 +111,23 @@ export const Editor = ({
   }
 
   return (
-    <ReactJson
-      collapsed={3}
-      src={doc}
-      onEdit={onEdit}
-      onAdd={onAdd}
-      onDelete={onDelete}
-      onSelect={onSelect}
-      theme={colorScheme == "dark" ? "monokai" : "rjv-default"}
-    />
+    <div>
+      <div className="editor-header">
+        <span className="editor-document-url">Document: {documentUrl}</span>
+        <button onClick={onChangeUrl} className="editor-change-url-btn">
+          Change URL
+        </button>
+      </div>
+      <ReactJson
+        collapsed={3}
+        src={doc}
+        onEdit={onEdit}
+        onAdd={onAdd}
+        onDelete={onDelete}
+        onSelect={onSelect}
+        theme={colorScheme == "dark" ? "monokai" : "rjv-default"}
+      />
+    </div>
   );
 };
 
