@@ -1,7 +1,6 @@
 import {
   Repo,
   WebSocketClientAdapter,
-  BroadcastChannelNetworkAdapter,
   IndexedDBStorageAdapter,
   RepoContext,
 } from "@automerge/react";
@@ -17,7 +16,6 @@ console.log(`sync server URL: ${syncServerUrl}`);
 const repo = new Repo({
   network: [
     new WebSocketClientAdapter(syncServerUrl),
-    new BroadcastChannelNetworkAdapter(),
   ],
   storage: new IndexedDBStorageAdapter("automerge"),
 });
