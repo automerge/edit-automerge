@@ -75,13 +75,12 @@ export const Editor = ({
   }, []);
 
   // lifted from https://gist.github.com/davalapar/d0a5ba7cce4bc599f54800da22926da2
-  // @ts-expect-error "might use it later"
   const _onDownloadDoc = useCallback(
     function () {
       if (!doc || !handle) {
         throw new Error("No document or handle found");
       }
-      const data = Automerge.save(doc);
+      const data = Automerge.save(doc) as Uint8Array<ArrayBuffer>;
       const filename = `${handle.documentId}.automerge`;
       const blobURL = URL.createObjectURL(
         new Blob([data], { type: "application/octet-stream" }),
@@ -114,8 +113,11 @@ export const Editor = ({
     <div>
       <div className="editor-header">
         <span className="editor-document-url">Document: {documentUrl}</span>
-        <button onClick={onChangeUrl} className="editor-change-url-btn">
+        <button onClick={onChangeUrl} className="editor-header-btn">
           Change URL
+        </button>
+        <button onClick={_onDownloadDoc} className="editor-header-btn">
+          Download
         </button>
       </div>
       <ReactJson

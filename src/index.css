@@ -164,6 +164,7 @@ button:focus-visible {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
 .editor-document-url {
@@ -171,7 +172,7 @@ button:focus-visible {
     color: #666;
 }
 
-.editor-change-url-btn {
+.editor-header-btn {
     padding: 5px 10px;
     font-size: 14px;
     background-color: #007bff;
