@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@automerge/automerge':
-        specifier: 3.1.1
-        version: 3.1.1
+        specifier: ^3.2.4
+        version: 3.2.4
       '@automerge/react':
-        specifier: ^2.5.1
-        version: 2.5.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^2.5.2
+        version: 2.5.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@microlink/react-json-view':
         specifier: ^1.27.1
         version: 1.27.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -60,32 +60,32 @@ importers:
 
 packages:
 
-  '@automerge/automerge-repo-network-broadcastchannel@2.5.1':
-    resolution: {integrity: sha512-htjVAPOzWvaal7jXkXhMBWW1OLHBAmGJp3fujdxgMmHa6/KUmhmHsn7VGvVqrU3vCfbfdu5PAupcla95AwlEbA==}
+  '@automerge/automerge-repo-network-broadcastchannel@2.5.2':
+    resolution: {integrity: sha512-AZB7XSABu/ODZ1EE6zdCYKQ9zjwQIyI2T5G4Woz1SIthG9OSBvma7AmiQGOFcHvE1VEes9FnQSpfmNHXJORUtw==}
 
-  '@automerge/automerge-repo-network-messagechannel@2.5.1':
-    resolution: {integrity: sha512-C2GKMoiGlyp7KQCwMt1Az/tJMYa+UtlrLtZ6WHT+PN3RQ9D/c/f5CkSNQSHgJRwFW/c2sU6PI3zcRasgrYaUOA==}
+  '@automerge/automerge-repo-network-messagechannel@2.5.2':
+    resolution: {integrity: sha512-hm1V/e4HCJzTLAIAhlT0Fl3VB6V1Aj6uMOwkla9efYw2faVHK7mvEaouP/gdE7N1VhShiKUUBG0rZPStOHxSoQ==}
 
-  '@automerge/automerge-repo-network-websocket@2.5.1':
-    resolution: {integrity: sha512-urvhlmTZ6VoJi5o0T2mtkVd4X1cuUdBC5/C/UY5FFgWczEq7PwCdNhUndv1CQSn8ePPsT59z7ZnRzZJbqqu22Q==}
+  '@automerge/automerge-repo-network-websocket@2.5.2':
+    resolution: {integrity: sha512-+3RqXCBWBX330wGviN0DJmeMAFLdvatpqSD/gBJRTl8q1v3H5zqmJ/dX8/2h/ip0zzZQea0fCiLjl3TrpqKiYQ==}
 
-  '@automerge/automerge-repo-react-hooks@2.5.1':
-    resolution: {integrity: sha512-IthUQEjXsKk0btVvkuOt+YFzuVbcO+em2BLrHQv7sqO0inUnw3CqsAxQXaISCnpotV5Cz8Xy7AAYhPR5Qtw+KA==}
+  '@automerge/automerge-repo-react-hooks@2.5.2':
+    resolution: {integrity: sha512-zA4jWjmSa9WiGPkYMtVeybxWQrfxkUNmPBbKa2Xekc/WM8Ro8goYqeSSu1ljrNMrr7CksmnHJp7LVtYTq9f0Bw==}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
       react-dom: ^18.0.0 || ^19.0.0
 
-  '@automerge/automerge-repo-storage-indexeddb@2.5.1':
-    resolution: {integrity: sha512-klyemjiwEn2+PW+NTjvBtjmykjJVoaBbQgk5P02jIgvAO7KH8OACldFzPrJdO0o6WAxkiOdtte8RHFKrDPkBlw==}
+  '@automerge/automerge-repo-storage-indexeddb@2.5.2':
+    resolution: {integrity: sha512-O/yGb3/VQarSeQxeNX10APoG9QNSIHVnL0OPGZI6TiUeyBK+pwgxxw/lWnNrfg4en56G/s9576Vei9uJKmTIpQ==}
 
-  '@automerge/automerge-repo@2.5.1':
-    resolution: {integrity: sha512-w242TXb2TaGHFux7dDtJIUVJMqSSq1iYvNia8FVYgVTUDvbm8chaGMe1kVdKMEINFiB/BNYPtsoJIPjJhQArLg==}
+  '@automerge/automerge-repo@2.5.2':
+    resolution: {integrity: sha512-oHpH+/XdOjFgp3IEyKS9FP+ORJvQZ5rj/WZMdzVmobzF2AXUSUZF/lPUMYOsvSWTR177t2Qw7PJNkakHVqPhaw==}
 
-  '@automerge/automerge@3.1.1':
-    resolution: {integrity: sha512-x7tZiMBLk4/SKYimVEVl1/wPntT9buGvLOWCey9ZcH8JUsB0dgm49C0S7Ojzgvflcs2hc/YjiXRPcFeFkinIgw==}
+  '@automerge/automerge@3.2.4':
+    resolution: {integrity: sha512-/IAShHSxme5d4ZK0Vs4A0P+tGaR/bSz6KtIJSCIPfwilCxsIqfRHAoNjmsXip6TGouadmbuw3WfLop6cal8pPQ==}
 
-  '@automerge/react@2.5.1':
-    resolution: {integrity: sha512-OYZMCInoclpNq6ofxTzXkRc6YEqvjtwBXt1JdBV3DmsDShrxJ8TnYzqbclfXCWek+ur9B3uHjD5XlSxQFwt4nA==}
+  '@automerge/react@2.5.2':
+    resolution: {integrity: sha512-+sEomni+NeV5KB+SQWdIT5ElJvKSuNLOU2kPrvrrksDTa+TUpnfPYILzDUMu/KWo8N1CBhC6aWiEBLukterRXw==}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
 
@@ -1349,23 +1349,23 @@ packages:
 
 snapshots:
 
-  '@automerge/automerge-repo-network-broadcastchannel@2.5.1':
+  '@automerge/automerge-repo-network-broadcastchannel@2.5.2':
     dependencies:
-      '@automerge/automerge-repo': 2.5.1
+      '@automerge/automerge-repo': 2.5.2
     transitivePeerDependencies:
       - supports-color
 
-  '@automerge/automerge-repo-network-messagechannel@2.5.1':
+  '@automerge/automerge-repo-network-messagechannel@2.5.2':
     dependencies:
-      '@automerge/automerge-repo': 2.5.1
+      '@automerge/automerge-repo': 2.5.2
       debug: 4.4.3
       eventemitter3: 5.0.4
     transitivePeerDependencies:
       - supports-color
 
-  '@automerge/automerge-repo-network-websocket@2.5.1':
+  '@automerge/automerge-repo-network-websocket@2.5.2':
     dependencies:
-      '@automerge/automerge-repo': 2.5.1
+      '@automerge/automerge-repo': 2.5.2
       cbor-x: 1.6.0
       debug: 4.4.3
       eventemitter3: 5.0.4
@@ -1376,10 +1376,10 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@automerge/automerge-repo-react-hooks@2.5.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@automerge/automerge-repo-react-hooks@2.5.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@automerge/automerge': 3.1.1
-      '@automerge/automerge-repo': 2.5.1
+      '@automerge/automerge': 3.2.4
+      '@automerge/automerge-repo': 2.5.2
       eventemitter3: 5.0.4
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -1387,15 +1387,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@automerge/automerge-repo-storage-indexeddb@2.5.1':
+  '@automerge/automerge-repo-storage-indexeddb@2.5.2':
     dependencies:
-      '@automerge/automerge-repo': 2.5.1
+      '@automerge/automerge-repo': 2.5.2
     transitivePeerDependencies:
       - supports-color
 
-  '@automerge/automerge-repo@2.5.1':
+  '@automerge/automerge-repo@2.5.2':
     dependencies:
-      '@automerge/automerge': 3.1.1
+      '@automerge/automerge': 3.2.4
       bs58check: 3.0.1
       cbor-x: 1.6.0
       debug: 4.4.3
@@ -1406,16 +1406,16 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@automerge/automerge@3.1.1': {}
+  '@automerge/automerge@3.2.4': {}
 
-  '@automerge/react@2.5.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@automerge/react@2.5.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@automerge/automerge-repo': 2.5.1
-      '@automerge/automerge-repo-network-broadcastchannel': 2.5.1
-      '@automerge/automerge-repo-network-messagechannel': 2.5.1
-      '@automerge/automerge-repo-network-websocket': 2.5.1
-      '@automerge/automerge-repo-react-hooks': 2.5.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@automerge/automerge-repo-storage-indexeddb': 2.5.1
+      '@automerge/automerge-repo': 2.5.2
+      '@automerge/automerge-repo-network-broadcastchannel': 2.5.2
+      '@automerge/automerge-repo-network-messagechannel': 2.5.2
+      '@automerge/automerge-repo-network-websocket': 2.5.2
+      '@automerge/automerge-repo-react-hooks': 2.5.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@automerge/automerge-repo-storage-indexeddb': 2.5.2
       react: 18.3.1
     transitivePeerDependencies:
       - bufferutil
